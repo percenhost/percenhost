@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PercenHost - Minecraft Hosting</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="assets/percenhost.png" alt="Percen Host Icon" class="logo-image">
+                <span class="highlight">Percen<span class="white">Host</span></span>
+            </div>
+            <div class="nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle" class="btn secondary">Dark Mode</button></li>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-aos="fade-up">Great Performance for Your <span class="typing-effect"></span></h1>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    Experience the best hosting with high performance, advanced security, and 24/7 support.
+                </p>
+                <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#features" class="btn secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-title">
+            <h2>Why Choose PercenHost?</h2>
+            <div class="title-bar"></div>
+        </div>
+        <div class="features-container">
+            <div class="feature-card" data-aos="fade-up">
+                <i class="fas fa-rocket"></i>
+                <h3>High Performance</h3>
+                <p>Our servers are optimized for the best Minecraft experience.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Advanced Security</h3>
+                <p>Protection against DDoS attacks and advanced security measures.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Our team is always available to help you with any issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-title">
+            <h2>Pricing Plans</h2>
+            <div class="title-bar"></div>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-card" data-aos="fade-up">
+                <h3>Basic Plan</h3>
+                <p class="price">Prices Coming Soon</p>
+                <ul>
+                    <li>2 Slots</li>
+                    <li>4GB RAM</li>
+                    <li>DDoS Protection</li>
+                </ul>
+                <a href="#pricing" class="btn primary">Get Started</a>
+            </div>
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Advanced Plan</h3>
+                <p class="price">Prices Coming Soon</p>
+                <ul>
+                    <li>4 Slots</li>
+                    <li>8GB RAM</li>
+                    <li>DDoS Protection</li>
+                    <li>Daily Backups</li>
+                </ul>
+                <a href="#pricing" class="btn primary">Get Started</a>
+            </div>
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="400">
+                <h3>Premium Plan</h3>
+                <p class="price">Prices Coming Soon</p>
+                <ul>
+                    <li>8 Slots</li>
+                    <li>16GB RAM</li>
+                    <li>DDoS Protection</li>
+                    <li>Daily Backups</li>
+                    <li>Priority Support</li>
+                </ul>
+                <a href="#pricing" class="btn primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="section-title">
+            <h2>Our Statistics</h2>
+            <div class="title-bar"></div>
+        </div>
+        <div class="statistics-container">
+            <div class="statistic-card">
+                <span class="counter" data-target="Coming Soon">0</span>
+                <p>Servers Hosted</p>
+            </div>
+            <div class="statistic-card">
+                <span class="counter" data-target="Coming Soon">0</span>
+                <p>Happy Clients</p>
+            </div>
+            <div class="statistic-card">
+                <span class="counter" data-target="Coming Soon">0</span>
+                <p>Uptime (%)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PercenHost. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://discord.gg/seuservidor" class="social-icon"><i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navItems = document.querySelector('.nav-items');
+        
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            navItems.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navItems.contains(e.target)) {
+                menuBtn.classList.remove('open');
+                navItems.classList.remove('active');
+            }
+        });
+
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('.nav-items a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Typing Effect
+        document.addEventListener('DOMContentLoaded', function () {
+            const typed = new Typed('.typing-effect', {
+                strings: ["Minecraft Server", "Gaming Experience", "Community"],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true
+            });
+        });
+
+        // Animated Counter
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // Velocidade da animação
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        });
+
+        // Dark Mode Toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            darkModeToggle.addEventListener('click', function () {
+                body.classList.toggle('dark-mode');
+                localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+            });
+
+            // Verifica o estado salvo
+            if (localStorage.getItem('dark-mode') === 'true') {
+                body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>
